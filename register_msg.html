@@ -1,0 +1,37 @@
+<html>
+<head><title>register msg</title>
+</head>
+<body bgcolor="">
+<h2>ITV MULTISPECIALITY HOSPITAL</h2>
+<h3 align="center">APPOINMENTS</h3>
+<table border="20" align="center">
+<tr>
+	<th>PATIENT NAME</th>
+	<th>AGE</th>
+	<th>HEALTH_ISSUE</th>
+	<th>ENTRY_DATE</th>
+	<th>MOB_NO</th>
+	<th>Delete</th>
+	<th>EDIT</th>
+	
+</tr>
+{% for x in d:%}
+<tr>
+	<td>{{x.1}}</td>
+	<td>{{x.2}}</td>
+	<td>{{x.3}}</td>
+	<td>{{x.4}}</td>
+	<td>{{x.5}}</td>
+	<td><a href="/delete/{{x.0}}">Delete</a></td>
+	<td><a href="/edit/{{x.0}}">edit</a></td>
+	
+</tr>
+{% endfor %}
+</table>
+<img src="https://kchospital.in/wp-content/uploads/elementor/thumbs/genetic-dna-science-showing-scientist-investigating-dna_132971-518-px8xxrce1fyd4wsayac19ioe382t3jp4wxzwul3irc.webp">
+<h4><u>FEVER appoinments</u><a href="/fever">click</a></h4>
+<h4 ><u>SUGAR appoinments</u><a href="/sugar">click</a></h4>
+<a href="/">DASHBOARD</a></center>
+
+</body>
+</html>

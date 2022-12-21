@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>UPDATE</title>
+	</head>
+	<body>
+		<center>
+		<h1>UPDATE THE DETAILS DETAILS</h1>
+		<form method="POST" action="/update/{{d.0}}">
+		<table>
+		<tr><td>PATIENT_NAME</td> <td><input type="text" name="name" value="{{d.1}}"></td></tr>
+		<tr><td>AGE</td> <td><input type="text" name="age" value="{{d.2}}"></td></tr>
+		<tr><td>HEALTH_ISSUE</td> <td><input type="text" name="treatment" value="{{d.3}}"></td></tr>
+		<tr><td>ENTRY_DATE</td> <td><input type="date" name="entry_date" value="{{d.4}}"></td></tr>
+		<tr><td>MOB_NO</td> <td><input type="text" name="mob_no" value="{{d.5}}"></td></tr>
+		<tr><td></td><td><input type="submit" name="send" value="submit"></td></tr></center>
+		
+		
+		</table>
+		</form>
+	</body>
+</html>

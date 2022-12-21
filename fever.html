@@ -1,0 +1,33 @@
+<html>
+<head><title>fever list</title>
+</head>
+<body bgcolor=>
+<h2 align ="center">ITV MULTISPECIALITY HOSPITAL</h2>
+<h1 align="center">FEVER</h1>
+<table border="10" align="center">
+<tr>
+	<th>PATIENT NAME</th>
+	<th>AGE</th>
+	<th>TREATMENT</th>
+	<th>ENTRY_DATE</th>
+	<th>MOB_NO</th>
+</tr>
+{% for x in d:%}
+<tr>
+	<td>{{x.1}}</td>
+	<td>{{x.2}}</td>
+	<td>{{x.3}}</td>
+	<td>{{x.4}}</td>
+	<td>{{x.5}}</td>
+</tr>
+{% endfor %}
+</table>
+
+<img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsoDHBnGejtGWH0X-XwVg-VPsnTCProDqm3W5THxLr4W1MARS4NYqofbSkR9vWidqVxvw&usqp=CAU">
+<h3><u>APPOINMENTS</u><a href="/msg">click</a></h3>
+<h3><u>DASHBOARD </u><a href="/">click</a></center>
+
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>
+SUGAR</title>
+<body bgcolor="">
+<center>
+<h2>ITV MULTISPECIALITY HOSPITAL</h2>
+<h1 align="center">SUGAR PATIENT</h1>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0LnagzRNEl2_-CvJJkFCXxysQNMfTOBtmqQ&usqp=CAU">
+<table border="10" align="center">
+<tr>
+	<th>PATIENT NAME</th>
+	<th>AGE</th>
+	<th>HEALTH_ISSUE</th>
+	<th>ENTRY_DATE</th>
+	<th>MOB_NO</th>
+</tr>
+{% for x in d:%}
+<tr>
+	<td>{{x.1}}</td>
+	<td>{{x.2}}</td>
+	<td>{{x.3}}</td>
+	<td>{{x.4}}</td>
+	<td>{{x.5}}</td>
+</tr>
+{% endfor %}
+</table>
+</center>
+<h3 align="center"><u>APPOINMENTS </u><a href="/msg">click</a>
+</n>
+<h3 align="center"><u>DASHBOARD<a href="/">click</a></h3>
+</body>
+</html>
